@@ -19,3 +19,16 @@ class Shoe:
         print("Your shoe is as good as new!")
         self.condition = "New"
     pass
+
+    def wear(self):
+        if self.condition == "New":
+            self.condition = "Used"
+        if self.condition == "Used":
+            self.condition = "Worn out"
+            
+    def describe(self):
+        print(f"Brand:n{self.brand}")
+        print(f"Size: {self.size}")
+        print(f"Condition: {self.condition}")
+            
+        
